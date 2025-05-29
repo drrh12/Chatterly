@@ -1,0 +1,57 @@
+{
+  "users": {
+    "userUid1": {
+      "uid": "userUid1",
+      "email": "user1@example.com",
+      "displayName": "Alice",
+      "photoURL": "https://example.com/alice.jpg",
+      "nativeLanguage": "English",
+      "targetLanguage": "Spanish",
+      "createdAt": "2023-10-26T10:00:00Z",
+      "blockedUsers": ["userUid3"],
+      "profileSetupComplete": true
+    },
+    "userUid2": {
+      "uid": "userUid2",
+      "email": "user2@example.com",
+      "displayName": "Bob",
+      "photoURL": null,
+      "nativeLanguage": "Spanish",
+      "targetLanguage": "English",
+      "createdAt": "2023-10-26T10:05:00Z",
+      "blockedUsers": [],
+      "profileSetupComplete": true
+    },
+    "userUid3": {
+      "uid": "userUid3",
+      "email": "user3@example.com",
+      "displayName": "Charlie",
+      "nativeLanguage": "French",
+      "targetLanguage": "English",
+      "createdAt": "2023-10-26T10:10:00Z",
+      "blockedUsers": [],
+      "profileSetupComplete": true
+    }
+  },
+  "chats": {
+    "userUid1_userUid2": {
+      "users": ["userUid1", "userUid2"],
+      "createdAt": "2023-10-26T11:00:00Z",
+      "lastMessage": "Hola!",
+      "lastMessageTimestamp": "2023-10-26T11:05:00Z",
+      "lastMessageSenderId": "userUid2",
+      "messages": {
+        "messageId1": {
+          "senderId": "userUid1",
+          "textContent": "Hello!",
+          "timestamp": "2023-10-26T11:00:30Z"
+        },
+        "messageId2": {
+          "senderId": "userUid2",
+          "textContent": "Hola!",
+          "timestamp": "2023-10-26T11:05:00Z"
+        }
+      }
+    }
+  }
+} 
